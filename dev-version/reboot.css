@@ -1,0 +1,90 @@
+/*
+
+REBOOTCSS - DEVELOPER VERSION
+RebootCSS Browser Reset Stylesheet v.1.2.0
+
+==================================================
+
+RebootCSS is a kind of resetCSS;
+Fix default elements values;
+Add new default elements values;
+Mobile friendly;
+Beautiful properties for responsive websites;
+
+==================================================
+
+Last Update: 2014-11-07
+Author: Matheus Marsiglio: http://heymathe.us
+
+*/
+
+html, body, div, span, object,
+iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, abbr, address,
+cite, code, del, dfn, em, img,
+ins, kbd, q, samp, small, strong,
+sub, sup, var, b, i, dl, dt, dd,
+ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article,
+aside, canvas, details, figcaption,
+figure, footer, header, hgroup, 
+menu, nav, section, summary, time, 
+mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+
+body { 
+	font:16px sans-serif;
+	/*Normalization of tap hightlight on touchable devices*/
+	-webkit-tap-highlight-color:transparent;
+	-moz-tap-highlight-color:transparent;
+	-ms-tap-highlight-color:transparent;
+	
+	/*antialiased for webkit browsers*/
+	-webkit-font-smoothing:antialiased;
+}
+
+/*fix for older browsers*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+li, ul { list-style:none; }
+
+/*img relative to its parent*/
+img { width:100%;height:auto; }
+
+/*cases of monospace font*/
+pre, code, kbd, samp { font-family:monospace, sans-serif; }
+
+/*font and number sizes sets*/
+small { font-size:85%; }
+
+sub, sup { font-size:75%; line-height:0;position:relative; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+
+/*Hand cursor on clickable input elements*/
+input[type="button"], input[type="submit"], input[type="image"], button { cursor:pointer; }
+
+button, input, select, textarea {
+	margin:0;
+	outline:none;
+}
+
+/*Text selection*/
+::selection {color:white; background:rgba(97,180,232,0.5); }
+::-moz-selection {color:white; background:rgba(97,180,232,0.5); }
+
+/*Link styles*/
+a { text-decoration:none; color:inherit; }
+a:hover, a:active, a:link, a:visited {
+	text-decoration:none;
+	outline:none;
+}
